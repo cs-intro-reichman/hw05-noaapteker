@@ -173,11 +173,7 @@ public class GameOfLife {
     public static void print(int[][] arr) {
 		for (int i=1; i <= arr.length-2; i++) {
 			for (int j=1; j<= arr[1].length-2; j++) {
-				if (j == arr[1].length-2) {
-					System.out.printf(" %s", arr[i][j]);
-				} else {
-					System.out.printf(" %s ",arr[i][j]);
-				}
+				System.out.printf("  %s", arr[i][j]);
 			}
 			System.out.println();
 		}
